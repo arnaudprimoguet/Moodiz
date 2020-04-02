@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/rangeslider.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>
+    <script src="js/scripto.js"></script>
     
   </head>
   <body>
@@ -46,7 +48,7 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-4">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">PhysicalTherapy<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">M O O D I Z<span class="text-primary">.</span> </a></h1>
           </div>
           <div class="col-12 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -69,8 +71,8 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="about.html"><span>About</span></a></li>
-                <li><a href="blog.html"><span>Blog</span></a></li>
+                <li><a href="about.html"><span>Connexion</span></a></li>
+                <li><a href="blog.html"><span>Inscription</span></a></li>
                 <li><a href="contact.html"><span>Contact</span></a></li>
               </ul>
             </nav>
@@ -98,9 +100,9 @@
             
             <div class="row justify-content-center mb-4">
               <div class="col-md-10 text-center">
-                <h1 data-aos="fade-up" class="mb-5">We give solutions to your <span class="typed-words"></span></h1>
+                <h1 data-aos="fade-up" class="mb-5">Retrouvez facilement vos <span class="typed-words"></span></h1>
 
-                <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn btn-primary btn-pill">Get Started</a></p>
+                <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn btn-primary btn-pill">Voir plus</a></p>
               </div>
             </div>
 
@@ -155,44 +157,236 @@
         </div>
       </div>
     </div>
-<!-- Description -->
+<!-- Description drag -->
 
-    <div class="block-services-1 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
+<style>
 
-            <h3 class="mb-3">What We Offer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rerum, aliquid velit minima inventore ad consequatur accusamus dolor.</p>
-            <p><a href="#" class="d-inline-flex align-items-center block-service-1-more"><span>See all services</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-          </div>
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <div class="block-service-1-card">
-              <a href="#" class="thumbnail-link d-block mb-4"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Physical Therapy</a></h3>
-              <div class="block-service-1-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit molestias inventore, id sed, in harum tenetur earum.</p></div>
-              <p><a href="#" class="d-inline-flex align-items-center block-service-1-more"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-            </div>
-          </div>
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <div class="block-service-1-card">
-              <a href="#" class="thumbnail-link d-block mb-4"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Chiropractic Therapy</a></h3>
-              <div class="block-service-1-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit molestias inventore, id sed, in harum tenetur earum.</p></div>
-              <p><a href="#" class="d-inline-flex align-items-center block-service-1-more"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-            </div>
-          </div>
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <div class="block-service-1-card">
-              <a href="#" class="thumbnail-link d-block mb-4"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Massage Therapy</a></h3>
-              <div class="block-service-1-excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit molestias inventore, id sed, in harum tenetur earum.</p></div>
-              <p><a href="#" class="d-inline-flex align-items-center block-service-1-more"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-            </div>
-          </div>
-        </div>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  vertical-align: baseline;
+  color: #333;
+  font-size: 16px;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+[role="button"] {
+  cursor: pointer;
+}
+.qrcode-maker {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.qrcode-maker .block {
+  margin-bottom: 15px;
+}
+.qrcode-maker .clearfix:before,
+.qrcode-maker .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.qrcode-maker .clearfix:after {
+  clear: both;
+}
+.qrcode-maker .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 14px;
+  resize: none;
+}
+.qrcode-maker .form-control :focus {
+  outline: none;
+}
+.qrcode-maker .btn {
+  margin: 0;
+  padding: 10px;
+  min-height: 48px;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 4px solid #999;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #bbb;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.qrcode-maker .btn-success {
+  background-color: #00bf90;
+  border-bottom: 4px solid #008c6a;
+}
+.qrcode-maker .btn-success:hover,
+.qrcode-maker .btn-success:active {
+  background: #00916d;
+}
+.qrcode-maker .btn-error {
+  background-color: #f62459;
+  border-bottom: 4px solid #c50838;
+}
+.qrcode-maker .btn-error:hover,
+.qrcode-maker .btn-error:active {
+  background: #e30940;
+}
+.qrcode-maker .dropbox {
+  position: relative;
+}
+.qrcode-maker .dropbox .qrcode-truth {
+  position: absolute;
+  top: -100000px;
+  left: -100000px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.qrcode-maker .dropbox > .dropbox-filed {
+  display: block;
+  position: relative;
+  border: 3px dashed #c1c1c1;
+  border-radius: 4px;
+  padding: 80px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: border-color 0.25s;
+  -moz-transition: border-color 0.25s;
+  -o-transition: border-color 0.25s;
+  transition: border-color 0.25s;
+}
+.qrcode-maker .dropbox > .dropbox-filed .dropbox-filed-text {
+  color: #999;
+  font-size: 2.2rem;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.qrcode-maker .dropbox > .dropbox-filed input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.qrcode-maker .dropbox > .dropbox-filed.dragging,
+.qrcode-maker .dropbox > .dropbox-filed:hover {
+  border-color: #8e8e8e;
+}
+.qrcode-maker .dropbox > .dropbox-filed.dragging .dropbox-text,
+.qrcode-maker .dropbox > .dropbox-filed:hover .dropbox-text {
+  color: #777;
+}
+.qrcode-maker .dropbox > .dropbox-content {
+  width: 100%;
+  display: none;
+}
+.qrcode-maker .dropbox > .dropbox-content .upload-content-image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  border: 0;
+  outline: none;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.qrcode-maker .dropbox > .dropbox-content .upload-content-image:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  min-height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  color: #aaa;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  box-shadow: 0 0 1px #c1c1c1;
+  content: "Upload Error";
+}
+.qrcode-maker header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 0;
+}
+.qrcode-maker header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.qrcode-maker footer {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: right;
+}
+</style>
+<section class="qrcode-maker">
+  
+  <form class="upload-form">
+    <div class="dropbox clearfix" id="qrcodeDropbox">
+      <div class="dropbox-filed block clearfix uploading" data-dropbox="dragndrop">
+        <h1 class="dropbox-filed-text">Drop files here</h1>
+        <h2 class="dropbox-filed-text">Or click here to upload</h2>
+        <input data-dropbox="file" type="file" accept="image/*">
+      </div>
+      <div class="dropbox-loading" data-dropbox="loading"></div>
+      <div class="dropbox-content block clearfix" data-dropbox="content">
+        <div class="qrcode-truth" id="qrcode"></div>
+        <canvas class="upload-content-image" id="preview" data-dropbox="preview"></canvas>
+        <button class="btn btn-error" data-dropbox="destory" type="button" role="button">Remove Image</button>
       </div>
     </div>
+    <div class="block clearfix">
+      <input class="form-control" id="qrcodeUrl" type="url" value="https://codepen.io" placeholder="http://">
+    </div>
+    <div class="block clearfix">
+      <input class="form-control" id="qrcodeSize" type="number" value="100" placeholder="Please enter the qrcode size">
+    </div>
+    <div class="block clearfix">
+      <button class="btn btn-success" id="qrcodeDownload" type="button" role="button">Generate & Download</button>
+    </div>
+  </form>
+
+</section>
+
+
+
 
 
 
@@ -468,7 +662,7 @@
   <script src="js/typed.js"></script>
             <script>
             var typed = new Typed('.typed-words', {
-            strings: ["pain"," stress"," fatigue"],
+            strings: ["vetements"," outfit"," look"],
             typeSpeed: 80,
             backSpeed: 80,
             backDelay: 4000,
