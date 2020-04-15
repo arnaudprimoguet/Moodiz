@@ -39,13 +39,17 @@ h1, h2, h3, h4, h5,
   color: #000 !important;
 }
 
-/* test de bouton */
+
 .btn-primary2 {
     border-color: #99d1be;
     color: white;
 }
 
-/* end test de bouton */
+.btn-center {
+    display:flex;
+    justify-content: center;
+}
+
 
 .bg-black {
   background: #000 !important;
