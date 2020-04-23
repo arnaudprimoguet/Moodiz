@@ -1,5 +1,5 @@
 var hoverCls = "file-hover";
-var $fileDrop = $('[data-droppable=""]');
+var $fileDrop = ('[data-droppable=""]');
 var $fileInput = $('[data-droppable-input=""]');
 var $fileImage = $('[data-droppable-image=""]');
 
