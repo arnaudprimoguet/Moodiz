@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>MOODIZ  </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <!-- Extra Arnaud Files -->
+    
+  
+
+
+
+
+
+
+
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-4">
+              <a href="index.html"><img src="images/logo-moodiz.png" width="90"></a>
+            
+          </div>
+
+      <div class="col-12 col-md-8 d-none d-xl-block">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+
+          <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+
+            <li><a href="appli.html"><span>L'appli</span></a></li>
+            <li><a href="connexion.html" data-toggle="modal" data-target="#exampleModal"><span>Connexion</span></a></li>
+            <li><a href="connexion.html" data-toggle="modal" data-target="#exampleModal2"><span>Inscription</span></a></li>
+          </ul>
+        </nav>
+      </div>
+            
+            
+        <!-- modal connexion -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Votre Email restera confidentiel</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Maintenir ma connexion</label>
+                  </div>
+                    <p data-aos="fade-up" data-aos-delay="100"><a href="connexion.html" class="btn btn-primary btn-pill">Se connecter</a></p>
+                    <!-- bouton de base
+                  <button type="submit" class="btn btn-primary">Se connecter</button>
+                    -->
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!-- end modal connexion -->
+        
+         <!-- modal inscription -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Inscription</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Adresse Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de passe</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                  </div>
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Genre</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Femme
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Homme
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                          <label class="form-check-label" for="gridRadios3">
+                            Non précisé
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                          S'inscrire à la newsletter
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                        <p data-aos="fade-up" data-aos-delay="100"><a href="connexion.html" class="btn btn-primary btn-pill">S'inscrire</a></p>
+                    <!-- bouton de base 
+                      <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    -->
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+     
+      </div>
+    </header>
+ 
+
+
+  
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-10">
+            
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-10 text-center">
+                <h1 data-aos="fade-up" class="mb-5">Retrouvez facilement vos <span class="typed-words"></span></h1>
+
+                <p data-aos="fade-up" data-aos-delay="100"><a href="#" class="btn btn-primary2 btn-pill">Voir plus</a></p>
+              </div>
+            </div>
+            <!-- Wetransfer
+            <div class="transfer" route="[object Object]"><div class="transfer__window uploader uploader--form uploader--type-link"><div class="scrollable transfer__contents"><div class="scrollable__content" style="margin-right: 0px;"><div class="uploader__files"><form><input type="file" multiple=""><input tabindex="-1" type="file" multiple="" webkitdirectory="webkitdirectory" directory="directory"></form><div class="uploader__empty-state uploader__empty-state--with-directories-selector"><svg viewBox="0 0 72 72"><path d="M36.493 72C16.118 72 0 55.883 0 36.493 0 16.118 16.118 0 36.493 0 55.882 0 72 16.118 72 36.493 72 55.882 55.883 72 36.493 72zM34 34h-9c-.553 0-1 .452-1 1.01v1.98A1 1 0 0 0 25 38h9v9c0 .553.452 1 1.01 1h1.98A1 1 0 0 0 38 47v-9h9c.553 0 1-.452 1-1.01v-1.98A1 1 0 0 0 47 34h-9v-9c0-.553-.452-1-1.01-1h-1.98A1 1 0 0 0 34 25v9z" fill="#409fff" fill-rule="nonzero" onclick="alert('ines je t'emmerde')"
+              
+              
+              ></path></svg><h2>Ajoutez vos fichiers</h2><button class="uploader__sub-title uploader__directories-dialog-trigger">Ou sélectionnez un dossier</button></div></div></div><div class="scrollable__scrollbar"><div class="scrollable__scrollbar-thumb" style="height: 0px; transform: translateY(0px);"></div></div></div><div class="transfer__footer"><button class="transfer__toggle-options" aria-label="Toggle transfer options"><svg viewBox="0 0 24 24"><path fill="#409fff" d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M16.5,13.5 C17.3284271,13.5 18,12.8284271 18,12 C18,11.1715729 17.3284271,10.5 16.5,10.5 C15.6715729,10.5 15,11.1715729 15,12 C15,12.8284271 15.6715729,13.5 16.5,13.5 Z M12,13.5 C12.8284271,13.5 13.5,12.8284271 13.5,12 C13.5,11.1715729 12.8284271,10.5 12,10.5 C11.1715729,10.5 10.5,11.1715729 10.5,12 C10.5,12.8284271 11.1715729,13.5 12,13.5 Z M7.5,13.5 C8.32842712,13.5 9,12.8284271 9,12 C9,11.1715729 8.32842712,10.5 7.5,10.5 C6.67157288,10.5 6,11.1715729 6,12 C6,12.8284271 6.67157288,13.5 7.5,13.5 Z"></path></svg></button><button type="button" class="transfer__button transfer__button--inactive" disabled="">Obtenir un lien</button></div></div></div>
+
+          </div>
+           -->
+
+<!-- New code cat -->
+
+
+<main id="content" role="main">
+    
+  <div class="panel">
+    <h2 class="panel-head">click or drag file</h2>
+    <div class="panel-content">
+      <label for="image">
+        <form action="" class="image-select" data-droppable="">
+          <input id="image" type="file" data-droppable-input=""/>
+          <i class="fa fa-camera fa-2x image-select__icon"></i>
+          <div class="image-select__message"></div>
+          <div class="bg-image aspect-square"
+               style="background-image: url('http://placekitten.com/g/300/300');" data-droppable-image=""></div>
+        </form>
+      </label>
+    </div>
+  </div>
+  <script>
+
+
+var hoverCls = "file-hover";
+var $fileDrop = $('[data-droppable=""]');
+var $fileInput = $('[data-droppable-input=""]');
+var $fileImage = $('[data-droppable-image=""]');
+
+var fileHover = function (ev) {
+  ev.stopPropagation();
+  ev.preventDefault();
+  if (ev.type === "dragover") {
+    $fileDrop.addClass(hoverCls);
+  } else {
+    $fileDrop.removeClass(hoverCls);
+  }
+};
+
+var fileSelect = function (ev) {
+  fileHover(ev);
+  var files = ev.target.files || ev.dataTransfer.files;
+  var reader = new FileReader();
+  
+  reader.onload = function (ev) {
+    $fileImage.css("background-image", "url("+ev.target.result+")");
+  };
+  reader.readAsDataURL(files[0]);
+};
+
+$fileDrop[0].ondragover = fileHover;
+$fileDrop[0].ondragleave = fileHover;
+$fileDrop[0].ondrop = fileSelect;
+$fileInput[0].onchange = fileSelect;
+  </script> 
+</main>
+
+
+<!-- Fin code cat -->
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>  
+
+
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                <h3 class="footer-heading mb-4"><font size="-1">Mentions légales</font></h3>
+              </div>
+              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                <h2 class="footer-heading mb-4"><font size="-1">A propos</h2></font></h2>
+                <ul class="list-unstyled">
+                </ul>
+              </div>
+              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                <h2 class="footer-heading mb-4"><font size="-1">L'application</font></h2>
+                <ul class="list-unstyled">
+                </ul>
+              </div>
+              <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                <h2 class="footer-heading mb-4"><font size="-1">Suivez-nous</font></h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+        <div class="row pt-5 mt-5">
+          <div class="col-12 text-md-center text-left">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | M O O D I Z <i class="icon-heart text-danger" aria-hidden="true"></i>  <a href="#" target="_blank" ></a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  
+
+  <script src="js/typed.js"></script>
+            <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["vetements"," outfit"," look"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+            </script>
+
+  <script src="js/main.js"></script>
+  
+  </body>
+</html>
