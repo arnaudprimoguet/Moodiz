@@ -87,4 +87,70 @@ body {
 
 
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
+.logo {
+  float: left;
+}
+/* ~~ Top Navigation Bar ~~ */
+
+#navigation-containeration {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  
+  height: 70px;
+  width: 100%;
+  text-align:right;
+}
+.navigation-bar img{
+float:left;
+width: 90px;
+}
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navigation-bar li a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+#menu {
+  float: right;
+}
+
+
+h1{
+
+color:#99d1be;
+text-align: center;
+}
+* {
+  color: #fff;
+  text-decoration: none;
+}
