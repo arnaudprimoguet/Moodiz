@@ -43,8 +43,8 @@ body {
 }
 .image-uploader label {
   display: block;
-  color: rgb(0, 0, 0);
-  font-size: 0.9em;
+  color: #ffffff;
+  font-size: 2em;
   margin: 1em;
   position: absolute;
   font-family: 'Rubik', sans-serif;
