@@ -5,7 +5,10 @@ body {
    height: 100%;
 }
 .container {
-  margin-left: 100px;
+  
+  margin: auto;
+  width: 212px;
+  padding: 10px;
 }
 .image-uploader {
   position: relative;
@@ -13,21 +16,23 @@ body {
 .image-uploader:not(.filled) {
   opacity: 0.7;
   cursor: pointer;
-  background: #fff;
+  background-image:url(../images/shein.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1) inset;
 }
 .image-uploader:not(.filled):hover {
   opacity: 1;
 }
 .image-uploader:not(.filled):hover .image {
-  border: 3px dashed #bbb !important;
+  border: 3px dashed #99d1be !important;
 }
 .image-uploader.filled {
   cursor: move;
 }
 .image-uploader .image {
   overflow: hidden;
-  border: 1px solid #aaa;
+  border: 2px solid ;
 }
 .image-uploader .image {
   width: 150px;
@@ -38,10 +43,12 @@ body {
 }
 .image-uploader label {
   display: block;
-  color: #888;
+  color: rgb(0, 0, 0);
   font-size: 0.9em;
   margin: 1em;
   position: absolute;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
   top: 0;
   left: 0;
 }
@@ -57,13 +64,13 @@ body {
   left: -35px;
 }
 .image-uploader .zoom .plus {
-  background: url(https://s.cdpn.io/24822/zoom-in.png) center no-repeat;
+  background: url(zoom-in.png) center no-repeat;
 }
 .image-uploader .zoom .minus {
-  background: url(https://s.cdpn.io/24822/zoom-out.png) center no-repeat;
+  background: url(zoom-out.png) center no-repeat;
 }
 .image-uploader .zoom .close {
-  background: url(https://s.cdpn.io/24822/close-widget.png) center no-repeat;
+  background: url(close-widget.png) center no-repeat;
 }
 .image-uploader .zoom .plus,
 .image-uploader .zoom .minus,
@@ -119,6 +126,8 @@ width: 90px;
   text-align: center;
   display:inline-block;
   vertical-align:top;
+  position: absolute;
+  right:0px;
 }
 
 .navigation-bar li {
@@ -128,12 +137,13 @@ width: 90px;
   margin-top: 4px;
   margin-bottom: 4px;
   display: inline;
+  
 }
 
 .navigation-bar li a {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#ffffff;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none;
   line-height: 70px;
   padding: 5px 15px;
@@ -145,12 +155,18 @@ width: 90px;
 }
 
 
-h1{
 
-color:#99d1be;
-text-align: center;
-}
 * {
-  color: #fff;
+  text-align: center;
+  color: #99d1be;
   text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  
+}
+
+#global {
+  margin-left: auto;
+  margin-right: auto;
+  width: ...; /* largeur obligatoire pour être centré */
 }
